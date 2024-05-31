@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.js"></script>
+    <title>Apple Caculator</title>
+</head>
+<body>
+    <main>
+        <div class="calculator-app">
+            <div class="calculator-app__header">
+                <input class="result" maxlength="9" value="0" type="text"disabled>
+            </div>
+            
+            <div class="calculator-app__buttons">
+                <button class="btn btn-grey clear" value="clear">AC</button>
+                <button class="btn btn-grey negative" value="negative">+/-</button>
+                <button class="btn btn-grey percent" value="percent">%</button>
+                <button class="btn operators" value="/">
+                    <i class="fa-solid fa-divide"></i>
+                </button>
+
+                <button class="btn digits " value="7">7</button>
+                <button class="btn digits " value="8">8</button>
+                <button class="btn digits " value="9">9</button>
+                <button class="btn operators " value="*">x</button>
+
+                <button class="btn digits" value="4">4</button>
+                <button class="btn digits" value="5">5</button>
+                <button class="btn digits" value="6">6</button>
+                <button class="btn operators" value="-">-</button>
+
+                <button class="btn digits" value="1">1</button>
+                <button class="btn digits" value="2">2</button>
+                <button class="btn digits" value="3">3</button>
+                <button class="btn operators" value="+">+</button>
+
+                <button class="btn digits zero"  value="0" >0</button>
+                <button class="btn digits" value=".">.</button>
+                <button class="btn equals" value="">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
