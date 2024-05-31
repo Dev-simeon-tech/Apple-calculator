@@ -97,7 +97,7 @@ function getSecondValue(val){
 
 operators.forEach( (operator) =>{
     operator.addEventListener('click', (e)=>{
-        currentOperator = e.target;
+        currentOperator = operator;
         isFirstValue = false;
 
         if(firstValue != '' && secondValue !='' && sign != '' && isCalculated === false){
@@ -122,7 +122,7 @@ operators.forEach( (operator) =>{
             isFirstValue === false;
         } 
         
-        sign = e.target.value;
+        sign = operator.value;
     })
 })
 negative.addEventListener('click',()=>{
@@ -169,7 +169,6 @@ percent.addEventListener( 'click' ,()=>{
         percentValue = result.value / 100;
     }
     result.value = percentValue;
-    // isCalculated === true;
 
 })
 clear.addEventListener('click', ()=>{
@@ -207,7 +206,6 @@ clear.addEventListener('click', ()=>{
 
 equals.addEventListener('click', ()=>{   
     calculate();
-    // firstValue = ''
 })
 function calculate(){
     switch(sign){
@@ -225,5 +223,4 @@ function calculate(){
             break;
     }
     isCalculated = true;
-    // isFirstValue = true;
 }

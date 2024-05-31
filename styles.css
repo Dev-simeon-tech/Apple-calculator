@@ -117,13 +117,7 @@ main{
     text-align: left;
     padding-left: calc(var(--btn-padding) + 6px);
 }   
-.operators[value="/"]{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-     
-}
+
 @media(min-width:45rem ){
     .calculator-app{
         border: 2px solid var(--border-clr); 
